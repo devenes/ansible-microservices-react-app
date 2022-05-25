@@ -1,17 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 4.0"
-    }
-  }
-}
-
-provider "aws" {
-  region  = var.region
-  profile = var.profile
-}
-
 resource "aws_instance" "control_node" {
   ami                    = var.instance_ami
   instance_type          = var.controller_instance_type
@@ -136,12 +122,4 @@ resource "null_resource" "config" {
       "chmod 400 ${var.keyname}.pem"
     ]
   }
-}
-
-output "controlnodeip" {
-  value = aws_instance.control_node.public_ip
-}
-
-output "privates" {
-  value = aws_instance.control_node.*.private_ip
 }
