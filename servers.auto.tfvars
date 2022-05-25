@@ -1,0 +1,9 @@
+instance_count           = 3
+keyname                  = "virginia"
+controller_instance_type = "t2.medium"
+managed_instance_type    = "t2.micro"
+tags                     = ["postgresql", "nodejs", "react"]
+instance_ami             = "ami-0f095f89ae15be883"
+region                   = "us-east-1"
+profile                  = "default"
+security_group           = "ansible-project-sec-gr-devenes"
