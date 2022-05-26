@@ -16,7 +16,7 @@ Microservice-Based Web Application deployed on AWS with Ansible and Docker
 </p>
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#Project-Architecture">Project Architecture</a> &#xa0; | &#xa0;
+  <a href="#-project-architecture">Project Architecture</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;  
   <a href="#Case-Study-Details">Case Study Details</a> &#xa0; | &#xa0;
