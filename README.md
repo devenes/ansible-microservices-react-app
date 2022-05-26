@@ -1,5 +1,5 @@
 <h1 align="center">
-Postgresql-Nodejs-React Web Application deployed on AWS with Ansible and Docker
+Microservice-Based Web Application deployed on AWS with Ansible and Docker
 </h1>
 
 <p align="center">
@@ -14,17 +14,9 @@ Postgresql-Nodejs-React Web Application deployed on AWS with Ansible and Docker
 
   <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/devenes/ansible-microservices-react-app?color=56BEB8" /> -->
 </p>
-
-<!-- Status -->
-
-<!-- <h4 align="center"> 
-	🚧  Ansible Microservices React App 🚀 Under construction...  🚧
-</h4> 
-
-<hr> -->
-
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#Project-Architecture">Project Architecture</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;  
   <a href="#Case-Study-Details">Case Study Details</a> &#xa0; | &#xa0;
@@ -32,15 +24,13 @@ Postgresql-Nodejs-React Web Application deployed on AWS with Ansible and Docker
   <a href="https://github.com/devenes" target="_blank">Author</a>
 </p>
 
-<br>
+## :dart: About ##
+
+Microservice-Based Web Application aims to deploy web-page written Nodejs and React Frameworks on AWS Cloud Infrastructure using Ansible. Building infrastructure process is managing with control node utilizing Ansible. This infrastructure has 1 control node and 3 EC2's as worker node. These EC2's will be launched on AWS console. Web-page has 3 main components which are postgresql, nodejs, and react. Each component is serving in Docker container on EC2s dedicated for them. Postgresql is serving as Database of web-page. Nodejs controls backend part of web-side and react controls frontend side of web-page. The code was written by Devenes and architecture will be created by Devenes.
 
 ## Project Architecture ##
 
 ![Project](ansible.png)
-
-## :dart: About ##
-
-This Web Application aims to deploy web-page written Nodejs and React Frameworks on AWS Cloud Infrastructure using Ansible. Building infrastructure process is managing with control node utilizing Ansible. This infrastructure has 1 control node and 3 EC2's as worker node. These EC2's will be launched on AWS console. Web-page has 3 main components which are postgresql, nodejs, and react. Each component is serving in Docker container on EC2s dedicated for them. Postgresql is serving as Database of web-page. Nodejs controls backend part of web-side and react controls frontend side of web-page. The code was written by Devenes and architecture will be created by Devenes.
 
 ## :rocket: Technologies ##
 
