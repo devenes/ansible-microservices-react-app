@@ -19,7 +19,7 @@ Microservice-Based Web Application deployed on AWS with Ansible and Docker
   <a href="#-project-architecture">Project Architecture</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;  
-  <a href="#Case-Study-Details">Case Study Details</a> &#xa0; | &#xa0;
+  <a href="#-Case-Study-Details">Case Study Details</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/devenes" target="_blank">Author</a>
 </p>
@@ -50,7 +50,7 @@ The following tools were used in this project:
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com), [Node](https://nodejs.org/en/), [Docker](https://www.docker.com/), [Terraform](https://www.terraform.io/), [Ansible](https://www.ansible.com/), [React](https://reactjs.org/) and [AWS account](https://aws.amazon.com/).
 
-## Case Study Details ##
+## 💼 Case Study Details ##
 
 - Your team has recently ended up a project that aims to serve as web page. You and your colleagues are assigned to work on this project. Developer team has done with code and DevOps team is going to deploy the app in production environment using ansible.
 
@@ -173,7 +173,7 @@ In the architecture, you can configure your architecture with these conditions,
 
 - Apply git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
-## Resources
+## 📚 Resources
 
 - [Ansible Documentation Framework](https://docs.ansible.com/ansible/2.5/user_guide/index.html)
 
