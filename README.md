@@ -1,14 +1,77 @@
-# Web Page Application (Postgresql-Nodejs-React) deployed on EC2's with Ansible and Docker
+<div align="center" id="top"> 
+  <img src="./.github/app.gif" alt="Ansible Microservices React App" />
 
-## Description
+  &#xa0;
+
+  <!-- <a href="https://ansiblemicroservicesreactapp.netlify.app">Demo</a> -->
+</div>
+
+<h1 align="center">
+Postgresql-Nodejs-React Web Application deployed on AWS with Ansible and Docker
+</h1>
+
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/devenes/ansible-microservices-react-app?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/devenes/ansible-microservices-react-app?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/devenes/ansible-microservices-react-app?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/devenes/ansible-microservices-react-app?color=56BEB8">
+
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/devenes/ansible-microservices-react-app?color=56BEB8" /> -->
+
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/devenes/ansible-microservices-react-app?color=56BEB8" /> -->
+
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/devenes/ansible-microservices-react-app?color=56BEB8" /> -->
+</p>
+
+<!-- Status -->
+
+<!-- <h4 align="center"> 
+	🚧  Ansible Microservices React App 🚀 Under construction...  🚧
+</h4> 
+
+<hr> -->
+
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#Case-Study-Details">Case Study Details</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/devenes" target="_blank">Author</a>
+</p>
+
+<br>
+
+## :dart: About ##
 
 This Web Application aims to deploy web-page written Nodejs and React Frameworks on AWS Cloud Infrastructure using Ansible. Building infrastructure process is managing with control node utilizing Ansible. This infrastructure has 1 control node and 3 EC2's as worker node. These EC2's will be launched on AWS console. Web-page has 3 main components which are postgresql, nodejs, and react. Each component is serving in Docker container on EC2s dedicated for them. Postgresql is serving as Database of web-page. Nodejs controls backend part of web-side and react controls frontend side of web-page. The code was written by Devenes and architecture will be created by Devenes.
 
-## Project Architecture
+## :rocket: Technologies ##
+
+The following tools were used in this project:
+
+- [Docker](https://www.docker.com/)
+- [React.js](https://reactjs.org/)
+- [Node.js](https://nodejs.org/)
+- [Ansible](https://www.ansible.com/)
+- [AWS](https://aws.amazon.com/)
+- [Postgresql](https://www.postgresql.org/)
+- [Git](https://git-scm.com/)
+- [Github](https://github.com/)
+- [Terraform](https://www.terraform.io/)
+
+## :white_check_mark: Requirements ##
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com), [Node](https://nodejs.org/en/), [Docker](https://www.docker.com/), [Terraform](https://www.terraform.io/), [Ansible](https://www.ansible.com/), [React](https://reactjs.org/) and [AWS account](https://aws.amazon.com/).
+
+## :checkered_flag: Starting ##
+
+## Project Architecture 
 
 ![Project](ansible.png)
 
-## Case Study Details
+## Case Study Details ##
 
 - Your team has recently ended up a project that aims to serve as web page. You and your colleagues are assigned to work on this project. Developer team has done with code and DevOps team is going to deploy the app in production environment using ansible.
 
@@ -80,9 +143,7 @@ In the architecture, you can configure your architecture with these conditions,
     - Create React container and publish it on port 3000
 
     - Please make sure this instance's security group should be accept traffic from 3000, and 80 dedicated port from anywhere.
-
-  - Last Step 
-
+  
 ## Expected Outcome
 
 ![Todo Web Page](./todo_web.png)
@@ -140,3 +201,14 @@ In the architecture, you can configure your architecture with these conditions,
 - [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/index.html)
 
 - [Terraform Documentation](https://www.terraform.io/docs/commands/index.html)
+
+## :memo: License ##
+
+This project is under license from Apache. For more details, see the [LICENSE](LICENSE) file.
+
+
+Made with :heart: by <a href="https://github.com/devenes" target="_blank">devenes</a>
+
+&#xa0;
+
+<!-- <a href="#top">Back to top</a> -->
