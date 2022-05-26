@@ -6,13 +6,14 @@ Microservice-Based Web Application deployed on AWS with Ansible and Docker
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/devenes/ansible-microservices-react-app?color=56BEB8">
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/devenes/ansible-microservices-react-app?color=56BEB8">
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/devenes/ansible-microservices-react-app?color=56BEB8">
-  <img alt="License" src="https://img.shields.io/github/license/devenes/ansible-microservices-react-app?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/devenes/ansible-microservices-react-app?color=56BEB8"> <img alt="Github stars" src="https://img.shields.io/github/stars/devenes/ansible-microservices-react-app?color=56BEB8" />
 
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/devenes/ansible-microservices-react-app?color=56BEB8" /> -->
 
   <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/devenes/ansible-microservices-react-app?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/devenes/ansible-microservices-react-app?color=56BEB8" /> -->
+  
+  
 </p>
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
