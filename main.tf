@@ -10,7 +10,7 @@ resource "aws_instance" "control_node" {
   }
 }
 
-resource "aws_instance" "managed_nodes" {
+resource "aws_instance" "managed_node" {
   ami                    = var.instance_ami
   count                  = var.instance_count
   instance_type          = var.managed_instance_type
