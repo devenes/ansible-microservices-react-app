@@ -93,7 +93,7 @@
         source: build
         state: present
 
-    - name: Launch postgresql docker container
+    - name: Launch nodejs docker container
       docker_container:
         name: enes_nodejs
         image: devenes/nodejs
