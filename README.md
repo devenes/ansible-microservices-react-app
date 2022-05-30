@@ -4,7 +4,7 @@ Microservice-Based Web Application deployed on AWS with Ansible and Docker
 
 <div align="center">
 
-  [![pages-build-deployment](https://github.com/devenes/ansible-microservices-react-app/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/devenes/ansible-microservices-react-app/actions/workflows/pages/pages-build-deployment)
+  <img alt="Pages" src="https://github.com/devenes/ansible-microservices-react-app/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/devenes/ansible-microservices-react-app?color=yellow">
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/devenes/ansible-microservices-react-app?color=56BEB8">
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/devenes/ansible-microservices-react-app?color=blue">
