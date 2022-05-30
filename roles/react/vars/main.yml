@@ -1,0 +1,5 @@
+---
+# vars file for react
+container_path: /home/ec2-user/react
+container_name: enes_react
+image_name: devenes/react
