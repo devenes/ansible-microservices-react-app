@@ -33,7 +33,7 @@ Microservice-Based Web Application aims to deploy web-page written Nodejs and Re
 
 ## 📜 Project Architecture ##
 
-![Project](ansible.png)
+![Project](ansible.jpg)
 
 ## :rocket: Technologies ##
 
@@ -57,11 +57,11 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com), [
 
 - Your team has recently ended up a project that aims to serve as web page. You and your colleagues are assigned to work on this project. Developer team has done with code and DevOps team is going to deploy the app in production environment using ansible.
 
-- Application is coded by Fullstack development team and given you as DevOps team. Web-page allows users to collect their infos. Registration data should be kept in separate PostgreSQL database located in one of EC2s. Nodejs framework controls backend and serves on port 5000, it is als connected to the PostgreSQL database on port 5432. React framework controls the frontend and it is also connected to the Nodejs server on port 5000. React server broadcasts web-page on port 3000. 
+- Application is coded by Fullstack development team and given you as DevOps team. Web-page allows users to collect their infos. Registration data should be kept in separate PostgreSQL database located in one of EC2s. Nodejs framework controls backend and serves on port 5000, it is als connected to the PostgreSQL database on port 5432. React framework controls the frontend and it is also connected to the Nodejs server on port 5000. React server broadcasts web-page on port 80. 
 
 - The Web Application will be deployed using Nodejs and React framework.
 
-- The Web Application should be accessible via web browser from anywhere on port 3000.
+- The Web Application should be accessible via web browser from anywhere on port 80.
 
 - EC2's and their security groups should be created on AWS console.
 
@@ -122,13 +122,21 @@ In the architecture, you can configure your architecture with these conditions,
 
     - Docker image should be created for React container
 
-    - Create React container and publish it on port 3000
+    - Create React container and publish it on port 80
 
-    - Please make sure this instance's security group should be accept traffic from 3000, and 80 dedicated port from anywhere.
+    - Please make sure this instance's security group should be accept traffic from 80, and 80 dedicated port from anywhere.
   
 ## Expected Outcome
 
 ![Todo Web Page](./todo_web.png)
+
+- ### Check the status of containers on managed nodes
+
+```bash
+ansible all -m shell -a "docker ps -a"
+```
+
+![containers](./containers.jpg)
 
 ### At the end of the project, following topics are to be covered;
 
