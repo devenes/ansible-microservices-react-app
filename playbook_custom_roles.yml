@@ -1,7 +1,7 @@
 - name: Docker install and configuration
   hosts: _development
   become: true
-  roles: 
+  roles:
     - docker
 
 - name: Postgre Database configuration
@@ -10,7 +10,7 @@
   roles:
     - postgre
 
-- name: Nodejs server configuration
+- name: Nodejs Server configuration
   hosts: _ansible_nodejs
   become: true
   roles:
