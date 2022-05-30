@@ -21,6 +21,7 @@ resource "aws_instance" "managed_node" {
     stack       = "ansible_project"
     environment = "development"
   }
+  user_data = file("managed_user_data.sh")
 }
 
 resource "aws_iam_role" "ec2full" {
