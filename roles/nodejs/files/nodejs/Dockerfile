@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:14-alpine
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -12,7 +12,7 @@ RUN npm install
 
 
 # copy all files into the image
-COPY . .
+COPY . ./
 
 EXPOSE 5000
 
