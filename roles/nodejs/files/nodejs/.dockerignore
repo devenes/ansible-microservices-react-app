@@ -1,0 +1,6 @@
+logs/
+.git
+.gitignore
+.gitmodules
+*.md
+*.cache
