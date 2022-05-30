@@ -1,0 +1,5 @@
+---
+# vars file for postgre
+postgre_container: /home/ec2-user/postgresql
+container_name: enes_postgre
+image_name: devenes/postgre
