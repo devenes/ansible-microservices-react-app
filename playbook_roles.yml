@@ -1,7 +1,7 @@
 - name: Docker install and configuration
   hosts: _development
   become: true
-  roles: 
+  roles:
     - geerlingguy.docker
   tasks:
     - name: Install pip
@@ -18,8 +18,8 @@
   become: true
   roles:
     - postgre
-    
-- name: Nodejs server configuration
+
+- name: Nodejs Server configuration
   hosts: _ansible_nodejs
   become: true
   roles:
