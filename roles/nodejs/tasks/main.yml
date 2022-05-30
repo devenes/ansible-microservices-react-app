@@ -23,11 +23,4 @@
           path: "{{ container_path }}"
         source: build
         state: present
-
-    - name: Launch postgresql docker container
-      docker_container:
-        name: "{{ container_name }}"
-        image: "{{ image_name }}"
-        state: started
-        ports:
-        - "5000:5000"
+      notify: Launch nodejs docker container
