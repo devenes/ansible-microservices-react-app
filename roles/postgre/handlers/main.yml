@@ -1,2 +1,13 @@
 ---
 # handlers file for postgre
+    - name: Launch postgresql docker container
+      docker_container:
+        name: "{{ container_name }}"
+        image: "{{ image_name }}"
+        state: started
+        ports: 
+        - "5432:5432"
+        env:
+          POSTGRES_PASSWORD: "Pp123456789"
+        volumes:
+         - /db-data:/var/lib/postgresql/data
