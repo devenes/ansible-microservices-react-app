@@ -43,7 +43,7 @@
       pip:
         name: docker
 
-    - name: Add user ec2-user to docker group
+    - name: Add ec2-user to docker group
       user:
         name: ec2-user
         groups: docker
