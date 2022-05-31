@@ -138,6 +138,18 @@ ansible all -m shell -a "docker ps -a"
 
 ![containers](./containers.jpg)
 
+- ### API Usage: Add todo using POST method
+<!-- > curl -X POST -H "Content-Type: application/json" -d '{"title":"Todo Title", "description":"Todo Description"}' http://nodejsserver:5000/todos -->
+
+> Replace your Node.js server DNS address and port number
+
+```bash
+curl --request POST \
+--url 'http://3.90.229.142:5000/todos' \
+--header 'content-type: application/json' \
+--data '{"description":"Learn Ansible"}'
+```
+
 ### At the end of the project, following topics are to be covered;
 
 - Ansible playbook preparation without roles
@@ -191,6 +203,12 @@ ansible all -m shell -a "docker ps -a"
 - [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/index.html)
 
 - [Terraform Documentation](https://www.terraform.io/docs/commands/index.html)
+
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+
+- [Nodejs Documentation](https://nodejs.org/en/docs/)
+
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/9.6/static/index.html)
 
 ## :memo: License ##
 
