@@ -4,6 +4,7 @@ Microservice-Based Web Application deployed on AWS with Ansible and Docker
 
 <div align="center">
 
+  <img alt="Terraform" src="https://github.com/devenes/ansible-microservices-react-app/actions/workflows/terraform_plan.yml/badge.svg" />
   <img alt="Pages" src="https://github.com/devenes/ansible-microservices-react-app/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/devenes/ansible-microservices-react-app?color=yellow">
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/devenes/ansible-microservices-react-app?color=56BEB8">
