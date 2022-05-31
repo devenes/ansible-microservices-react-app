@@ -1,0 +1,72 @@
+# This GitHub Workflow is created by @Devenes. It is used to manage
+# Terraform infrastructure provisioning and deployment on your GitHub
+# Repository using GitHub Actions to automate the process of creating
+# Terraform modules, running Terraform plan, applying the plan, and
+# cleaning up the infrastructure after the deployment with triggering
+# GitHub Actions to run the commands with push events on specific branches.
+
+name: "Terraform Infrastructure Plan"
+on:
+  # Manual trigger
+  workflow_dispatch:
+
+  push:
+    branches: ["*"]
+    paths:
+      - "*/**"
+
+  pull_request:
+    branches: ["*"]
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  terraform:
+    name: ${{matrix.runner}} - ${{ matrix.environment }}
+
+    runs-on: ["${{ matrix.runner }}"]
+
+    # Define your GitHub environment
+    environment: terraform
+
+    strategy:
+      matrix:
+        include:
+          - environment: prod
+            runner: ubuntu-18.04
+
+    env:
+      # Define your Terraform environment variables
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_wrapper: false
+
+      - name: Terraform Init
+        id: init
+        run: |
+          rm -rf .terraform
+          terraform init -upgrade=true -no-color -input=false
+
+      - name: Terraform Plan
+        id: plan
+        if: github.event_name == 'push'
+        run: terraform plan -input=false -no-color
+
+      - name: Terraform Apply
+        if: github.ref == 'refs/heads/release'
+        id: apply
+        run: terraform apply -auto-approve -input=false
+
+      - name: Terraform destroy
+        if: github.ref == 'refs/heads/destroy'
+        id: destroy
+        run: terraform destroy -auto-approve -input=false
