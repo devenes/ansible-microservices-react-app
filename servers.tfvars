@@ -1,0 +1,9 @@
+instance_count           = 3                                 # Number of instances to create  
+keyname                  = "virginia"                        # Define the keyname to use for SSH access
+controller_instance_type = "t2.medium"                       # Define the instance type to use for the controller
+managed_instance_type    = "t2.micro"                        # Define the instance type to use for the managed nodes
+tags                     = ["postgresql", "nodejs", "react"] # Define tags for the instances
+instance_ami             = "ami-0f095f89ae15be883"           # Define the AMI to use for the instances
+region                   = "us-east-1"                       # Define the region to use
+profile                  = "default"                         # Define the profile to use
+security_group           = "ansible-project-sec-gr-devenes"  # Define the security group to use
