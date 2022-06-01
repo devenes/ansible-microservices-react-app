@@ -4,7 +4,6 @@
 # Terraform modules, running Terraform plan, applying the plan, and
 # cleaning up the infrastructure after the deployment with triggering
 # GitHub Actions to run the commands with push events on specific branches.
-
 name: "Terraform Infrastructure Plan"
 on:
   # Manual trigger
