@@ -41,11 +41,12 @@ Microservice-Based Web Application aims to deploy web-page written Nodejs and Re
 The following tools were used in this project:
 
 - [Docker](https://www.docker.com/)
+- [Javascript](https://developer.mozilla.org/en-US/docs/web)
 - [React.js](https://reactjs.org/)
 - [Node.js](https://nodejs.org/)
 - [Ansible](https://www.ansible.com/)
 - [AWS](https://aws.amazon.com/)
-- [Postgresql](https://www.postgresql.org/)
+- [PostgreSQL](https://www.postgresql.org/)
 - [Git](https://git-scm.com/)
 - [Github](https://github.com/)
 - [Terraform](https://www.terraform.io/)
