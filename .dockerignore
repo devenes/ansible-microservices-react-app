@@ -1,0 +1,11 @@
+*.md
+*.jpg
+*.jpeg
+*.png
+*.gif
+.git
+.gitignore
+.gitmodules
+.DS_Store
+.idea
+Dockerfile
