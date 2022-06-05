@@ -1,5 +1,5 @@
 <h1 align="center">
-Microservice-Based Web Application deployed on AWS with Ansible and Docker
+Microservice-Based Web Application deployed on AWS with Terraform, Ansible and Docker
 </h1>
 
 <div align="center">
@@ -11,11 +11,8 @@ Microservice-Based Web Application deployed on AWS with Ansible and Docker
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/devenes/ansible-microservices-react-app?color=blue">
   <img alt="License" src="https://img.shields.io/github/license/devenes/ansible-microservices-react-app?color=purple"> 
   <img alt="Github stars" src="https://img.shields.io/github/stars/devenes/ansible-microservices-react-app?color=orange"/>
-
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/devenes/ansible-microservices-react-app?color=56BEB8" /> -->
-
   <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/devenes/ansible-microservices-react-app?color=56BEB8" /> --> 
- 
 </div>
 
 <p align="center">
