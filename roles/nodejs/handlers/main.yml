@@ -1,2 +1,9 @@
 ---
 # handlers file for nodejs
+    - name: Launch nodejs docker container
+      docker_container:
+        name: "{{ container_name }}"
+        image: "{{ image_name }}"
+        state: started
+        ports:
+        - "5000:5000"
