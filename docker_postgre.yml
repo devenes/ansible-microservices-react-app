@@ -1,7 +1,7 @@
 - name: Install docker
   gather_facts: No
   any_errors_fatal: true
-  hosts: _ansible_postgresql
+  hosts: ansible_postgresql
   become: true
   tasks:
     - name: upgrade all packages

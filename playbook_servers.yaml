@@ -1,7 +1,7 @@
 - name: Docker install and configuration
   gather_facts: No
   any_errors_fatal: true
-  hosts: _development
+  hosts: development
   become: true
   tasks:
     - name: upgrade all packages
@@ -64,7 +64,7 @@
         enabled: yes
 
 - name: Postgre Database configuration
-  hosts: _ansible_postgresql
+  hosts: ansible_postgresql
   become: true
   gather_facts: No
   any_errors_fatal: true
@@ -117,7 +117,7 @@
       register: docker_info
 
 - name: Nodejs Server configuration
-  hosts: _ansible_nodejs
+  hosts: ansible_nodejs
   become: true
   gather_facts: No
   any_errors_fatal: true
@@ -166,7 +166,7 @@
           - "5000:5000"
 
 - name: React UI Server configuration
-  hosts: _ansible_react
+  hosts: ansible_react
   become: true
   gather_facts: No
   any_errors_fatal: true
